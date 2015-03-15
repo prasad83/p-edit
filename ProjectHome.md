@@ -1,0 +1,1 @@
+Text editor developed using ncurses as part of semester course.
