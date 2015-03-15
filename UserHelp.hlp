@@ -1,0 +1,157 @@
+General:
+********
+        'Pedit' was written as project work of 5th semester,B.E.
+It is a very simple editor which allows you to edit documents.
+It has a special property which can display the tab, newline and
+space with visible special symbols ( » ((char)187), ¶((char)182)
+·((char)183) ) respectively.
+The Status bar shows the filename followed by (=) symbol which means
+the file contents is not changed when file contents changes the (*)
+appears.
+
+Usage:
+******
+'Pedit' accepts file-name at the command line, which is optional.
+
+The Menu bar is not shown always this is main advantage for full
+scale display to be made. You can make it visible by invoking it.
+
+Menu Invocation:
+****************
+    As already said Menu bar is not always displayed to make it
+available you have to press 'F9' key.
+
+You can now move to left or right adjacent menu by pressing Left
+or Right arrow Key.
+
+You can make the pull down menu to appear by pressing Down arrow
+or Enter key or ( f|F, e|E, s|S, o|O, h|H to pull File | Edit |
+Search | Options | Help menu ).
+
+To make selection in pull down menu use Up or Down Arrow.
+
+To Select the options from the menu use Enter key.
+
+To Cancel the menu selection use Esc key.
+
+Menu Options:
+*************
+File Menu:
+**********
+*New - Ctrl+N:
+--------------
+    This option will create a new blank file named("noname") for
+editing.
+
+*Open - Ctrl+O:
+---------------
+    This option will display a selection dialog box from which
+you can select a file for editing. You can also traverse into
+different directories and select the files in them. Pressing Esc
+key will cancel the selection.
+
+*Save - F2:
+-----------
+This option will save the currently editing file.
+
+*Save As... - F12:
+------------------
+    This option will lets you to save the currently editing file
+under a different name as specified by you in the dialog box.
+
+*Close - F10:
+-------------
+    This option will close the currently opened file for editing.
+
+*Exit - Alt+X:
+--------------
+    This option will let you 'quit' editor. Before quiting you
+will asked to keep or delete the backup's made (if any) in /tmp.
+Backup's will be made as /tmp/<filename>._prtmp when file is
+over-written during Save or Save As... options.
+
+Edit Menu:
+**********
+*Undo - Ctrl+U:
+---------------
+    This option will undo last editing operation.
+
+*Copy - F3:
+-----------
+    This option will select the part of the document for cutting,
+pasting or deleting. The first press of 'F3' key will start the
+selection of document. You are now in document selection process
+where you are not allowed to perform editing but can traverse the
+document. The second press of 'F3' key will end the selection of
+document.
+
+*Paste - F5:
+------------
+    This option will paste the previously selected document,which
+is not deleted, at the current cursor position.
+
+*Cut - F6:
+----------
+    This option will cut the selected document.The cut operation
+should be invoked before any editing operation is done on the
+document.The Cut operation will allow Paste to be made.
+
+*Del Word - Ctrl+W:
+-------------------
+    This option will delete the whole word/ part of the word to
+the right of the word. The deletion if word is alpha-numeric.
+
+*Del Line - Ctrl+L:
+-------------------
+    This option will delete the whole line on which cursor is
+presently present.
+
+*Del Selc - Ctrl+D:
+-------------------
+    This option will delete selected document. This operation
+should be invoked before any editing operation is done on the
+document.The Del Selc operation will not allow Paste to be made.
+
+Search Menu:
+************
+*Find - Ctrl+F:
+---------------
+    This option will allow you to specify the word to be searched
+in the document.
+
+*FindAgain - Ctrl+A:
+--------------------
+    This option will continue search for the previously specified
+word by user. If no word is specified then Find is called.
+
+*FindReplace - Ctrl+R:
+----------------------
+    This option will take the word to be replaced from you and will
+be searched in the document. If search is successfull another word
+is taken from you which is the replacing word. The replacing can
+be done interactively one at a time or all at once.
+
+Options Menu:
+*************
+*LinShell - Alt+L:
+------------------
+    This option will take you to the Linux Shell as specified by the
+environmental variable '$SHELL' for future terminal operations. You
+can get back to editing of document by exiting the Shell.
+
+*ShowSpecial - F8:
+------------------
+    This option will toggle the display of special symbols for tab,
+newline and space.
+
+Help Menu:
+**********
+*User Help - F1:
+----------------
+    This option will open the currently shown window.
+
+*About... :
+-----------
+    This option will show the information about the author of Pedit.
+
+** END **
